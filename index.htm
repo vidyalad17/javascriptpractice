@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>PRN Generation</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <BR><h1 align="center">Generate a PRN</h1>
+    <form name="myform" method="dialog" action="index.html" onsubmit="return generateprn() " class="form1">
+    Current Year<BR><input type="text" name="cyear" placeholder="Ex:If 2009 Enter 09" required ><BR><BR>
+    <label>Branch Code</label><BR>
+    <select name="branch">
+      <option value="CS">Computer Science(CS)</option>
+      <option value="ME">Mechanical Engineering(ME)</option>
+      <option value="IT">Information Technology(IT)</option>
+      <option value="CV">Civil Engineering(CV)</option> 
+      <option value="CE">Chemical Engineering(CE)</option>
+      <option value="EX">Electronics Engineering(EX)</option>
+      <option value="EC">Electrical and Telecommunucation(EC)</option>
+    </select><BR><BR>
+    Batch Number<BR><input type="text" name="batch" placeholder="Enter your Two Digit Batch Number" required><BR><BR>
+    Sequential Number<BR><input type="text" name="snum" placeholder="Enter your sequential number between 0 to 1000" required><BR><BR>
+     <BR><input type="submit" value="Generate PRN"><BR>
+     <p id="msg"></p>
+     <p id="print"></p>
+      <script src="script.js"></script>
+    </form>
+   
+  </body>
+</html>
